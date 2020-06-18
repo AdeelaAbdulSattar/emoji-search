@@ -1,21 +1,21 @@
-import React, { PureComponent } from "react";
+import React, { Component } from "react";
 import PropTypes from "prop-types";
-import "./SearchBar.css";
+import "./SearchBar.scss";
 
-class SearchBar extends PureComponent {
+class SearchBar extends Component {
   static propTypes = {
     textChange: PropTypes.func,
   };
 
-  handleChange(val) {
-    this.props.textChange(val);
+  handleChange(input) {
+    this.props.textChange(input);
   }
 
   render() {
     return (
-      <div className="component-search-input">
-        <div>
-          <input onChange={this.handleChange} />
+      <div className="div component-search-input">
+        <div className="div">
+          <input className="input" onChange={this.handleChange} />
         </div>
       </div>
     );

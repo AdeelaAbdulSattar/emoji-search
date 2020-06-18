@@ -1,8 +1,8 @@
-import React, { PureComponent } from "react";
+import React, { Component } from "react";
 import PropTypes from "prop-types";
-import "./EmojiResultRow.css";
+import "./EmojiResultRow.scss";
 
-export default class EmojiResultsRow extends PureComponent {
+export default class EmojiResultsRow extends Component {
   static propTypes = {
     title: PropTypes.string,
     symbol: PropTypes.string,
@@ -16,7 +16,7 @@ export default class EmojiResultsRow extends PureComponent {
         className="component-emoji-result-row copy-to-clipboard"
         data-clipboard-text={this.props.symbol}
       >
-        <img alt={this.props.title} src={src} />
+        <img className="img" alt={this.props.title} src={src} />
         <span className="title">{this.props.title}</span>
         <span className="info">Click to copy emoji :) </span>
       </div>

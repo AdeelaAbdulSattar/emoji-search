@@ -1,9 +1,9 @@
-import React, { PureComponent } from "react";
+import React, { Component } from "react";
 import PropTypes from "prop-types";
 import Clipboard from "clipboard";
 import EmojiResultRow from "./EmojiResultRow";
 
-class EmojiResults extends PureComponent {
+class EmojiResults extends Component {
   static propTypes = {
     emojiData: PropTypes.array,
   };

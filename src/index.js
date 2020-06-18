@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
 import Header from "./components/Header";
 import SearchBar from "./components/SearchBar";
 import filterEmoji from "./components/filterEmoji";
@@ -22,7 +21,7 @@ class Index extends Component {
 
   render() {
     return (
-      <div className="body">
+      <div>
         <Header />
         <SearchBar textChange={this.handletextChange}></SearchBar>
         <EmojiResults emojiData={this.state.filteredEmoji} />
