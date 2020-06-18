@@ -7,9 +7,9 @@ class SearchBar extends Component {
     textChange: PropTypes.func,
   };
 
-  handleChange(input) {
+  handleChange = (input) => {
     this.props.textChange(input);
-  }
+  };
 
   render() {
     return (

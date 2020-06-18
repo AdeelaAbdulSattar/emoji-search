@@ -13,11 +13,11 @@ class Index extends Component {
     };
   }
 
-  handletextChange(input) {
+  handletextChange = (input) => {
     this.setState({
       filteredEmoji: filterEmoji(input.target.value),
     });
-  }
+  };
 
   render() {
     return (
