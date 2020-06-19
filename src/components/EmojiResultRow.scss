@@ -1,0 +1,35 @@
+$boarder-outline: #ccc;
+$background: #eee;
+$font-stack: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+.component-emoji-result-row {
+  border-bottom: 1px solid $boarder-outline;
+  padding: 10px;
+  height: 32px;
+  position: relative;
+  font-family: $font-stack;
+  cursor: pointer;
+  &:hover {
+    background-color: $background;
+    .info {
+      display: inline-block;
+    }
+  }
+  .img {
+    width: 32px;
+    height: 32px;
+    padding-right: 10px;
+  }
+  .title {
+    position: relative;
+    top: -8px;
+  }
+  .info {
+    float: right;
+    position: relative;
+    top: 8px;
+    right: 10px;
+    color: $boarder-outline;
+    display: none;
+  }
+}
